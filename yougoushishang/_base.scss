@@ -1,0 +1,23 @@
+/*去默认边距*/
+	html,body,div,ul,ol,li,dl,dt,dd,p,input,form,h1,h2,h3,h4,h5,h6,fieldset,img{
+		margin:0;
+		padding:0;
+	}
+	/*去三像素*/
+	img{
+		display:block;
+		border:0;
+	}
+	ul,ol,li{
+		list-style:none;
+	}
+	html,a,u{
+		text-decoration:none;
+		color:#000; 
+	}
+	b,strong,h1,h2,h3,h4,h5,h6{
+		font-weight:normal;
+	}
+	em,i{
+		font-style:normal;
+	}
