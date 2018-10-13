@@ -51,7 +51,7 @@ define(["jquery"], function($) {
 
 			})
 
-
+			// 添加js特效
 			var oBtns = $("#play").find("ol").find("li");
 			var oUl = $("#play").find("ul");
 			var aLis = oUl.find("li");
@@ -156,22 +156,168 @@ define(["jquery"], function($) {
 
 			// 特效部分
 			// 移入时 透明度变成灰色
-			var oDiv = $(".NEW-2").find(".div1").find("div");
+			var oDiv = $(".NEW-2").find(".div1");
 			// var oDiv = $(".cot2-1").find("div");
-			oDiv.mouseenter(function(){
+			oDiv.on("mouseenter","div",function(){
 				$(this).css({
 					background:'#959595',
 
 				})
 			});
 			// 移出时消失
-			oDiv.mouseleave(function(){
+			oDiv.on("mouseleave","div",function(){
 				$(this).css({
 			 		background:'white'
 				})
 			});
+	
+
+
+	// 4.今日主推大牌
+			// 加载数据
+			$.ajax({
+				url:'data/zhutui.json',
+				type:"GET",
+				success:function(res){
+					var html = "";
+						html += `<div class = "zhutui-top">
+									<ul>
+						 				<li><a href=""><img src="images/tu1.jpg" alt=""></a></li>
+										<li><a href=""><img src="images/tu2.jpg" alt=""></a></li>
+										<li><a href=""><img src="images/tu3.jpg" alt=""></a></li> 
+									</ul>
+								</div>
+								<div class = "zhutui-bottom">
+									<div class = "div2">
+										<a href=""><img src="images/tu4.png" alt=""></a>
+										<a href=""><img src="images/tu5.png" alt=""></a>
+										<a href=""><img src="images/tu6.png" alt=""></a>
+										<a href=""><img src="images/tu7.png" alt=""></a>
+										<a href=""><img src="images/tu8.png" alt=""></a>
+										<a href=""><img src="images/tu9.png" alt=""></a>
+										<a href=""><img src="images/tu10.png" alt=""></a>
+										<a href=""><img src="images/tu11.png" alt=""></a>
+										<a href=""><img src="images/tu12.png" alt=""></a>
+										<a href=""><img src="images/tu13.png" alt=""></a>
+									</div>
+
+								</div>`;
+					
+						$(".content .zhutui .zhutui-2").html(html); 
+				},
+				error:function(msg){
+					alert(msg);
+				}
+
+			})
+
+			//特效部分
+			/*var oUl = $(".zhutui-top").find("ul");
+			var aLis = oUl.find("li");
+			$("#div1").hover(function(){
+				$("#div2").fadeOut(2000,function(){
+					$("#div1").html("移入");
+				});
 			
+			},function(){
+				$("#div2").fadeIn(2000,function(){
+					$("#div1").html("移出");
+				 });
+			})*/
+
 			
+
+	// 5.品牌潮流资讯
+		// pinpai-2
+			// 加载数据
+			$.ajax({
+				url:'data/pinpai-2.json',
+				type:"GET",
+				success:function(res){
+					var html = "";
+					for(var i = 0 ;i < res.length;i++){
+						html += `<li>
+									<a href="">
+										<img src="${res[i].img}" alt="">
+										<div id = "${res[i].id}"></div>
+									</a>
+								</li>`;
+					}
+				
+					$(".pinpai .pinpai-2 ul").html(html); 
+				},
+				error:function(msg){
+					alert(msg);
+				}
+
+			})
+		// pinpai-3
+			// 加载数据
+			$.ajax({
+				url:'data/pinpai-3.json',
+				type:"GET",
+				success:function(res){
+					var html = '';
+					for(var i = 0; i < res.length; i++){
+						html += `<li>
+									<a href="">
+										<img src="${res[i].img}" alt="">
+										<div id = "${res[i].id}"></div>
+									</a>
+								</li>`;
+					}
+				
+					$(".pinpai .pinpai-3 ul").html(html);
+				},
+				error:function(msg){
+					alert(msg);
+				}
+			})
+
+		// pinpai-4
+			// 加载数据
+			$.ajax({
+				url:'data/pinpai-4.json',
+				type:"GET",
+				success:function(res){
+					var html = '';
+					for(var i = 0; i < res.length; i++){
+						html += `<p>
+									<a href="">
+										<img src="${res[i].img}" alt="">
+										<div id = "${res[i].id}"></div>
+									</a>
+								</p>`;
+					}
+				
+					$(".pinpai .pinpai-4").html(html);
+				},
+				error:function(msg){
+					alert(msg);
+				}	
+			})
+		// pinpai-5
+			// 加载数据
+			$.ajax({
+				url:'data/pinpai-5.json',
+				type:"GET",
+				success:function(res){
+					var html = '';
+					for(var i = 0; i < res.length; i++){
+						html += `<p>
+									<a href="">
+										<img src="${res[i].img}" alt="">
+										<div id = "${res[i].id}"></div>
+									</a>
+								</p>`;
+					}
+				
+					$(".pinpai .pinpai-5").html(html);
+				},
+				error:function(msg){
+					alert(msg);
+				}	
+			})
 
 
 

@@ -133,8 +133,10 @@ em, i {
 .nav .nav-2 .nav2-1 .div1 ul li {
   width: 60px;
   height: 15px;
-  font-size: 14px;
   padding: 10px; }
+
+.nav .nav-2 .nav2-1 .div1 ul li a {
+  font-size: 14px; }
 
 .nav .nav-2 .nav2-1 .div1 ul li:nth-child(1) {
   padding-top: 25px; }
@@ -175,8 +177,10 @@ em, i {
 .nav .nav-2 .nav2-1 .div2 ul li {
   width: 60px;
   height: 15px;
-  font-size: 14px;
   padding: 10px; }
+
+.nav .nav-2 .nav2-1 .div2 ul li a {
+  font-size: 14px; }
 
 .nav .nav-2 .nav2-1 .div2 ul li:nth-child(1) {
   padding-top: 25px; }
@@ -217,8 +221,10 @@ em, i {
 .nav .nav-2 .nav2-1 .div3 ul li {
   width: 60px;
   height: 15px;
-  font-size: 14px;
   padding: 10px; }
+
+.nav .nav-2 .nav2-1 .div3 ul li a {
+  font-size: 14px; }
 
 .nav .nav-2 .nav2-1 .div3 ul li:nth-child(1) {
   padding-top: 25px; }
@@ -259,8 +265,10 @@ em, i {
 .nav .nav-2 .nav2-1 .div4 ul li {
   width: 60px;
   height: 15px;
-  font-size: 14px;
   padding: 10px; }
+
+.nav .nav-2 .nav2-1 .div4 ul li a {
+  font-size: 14px; }
 
 .nav .nav-2 .nav2-1 .div4 ul li:nth-child(1) {
   padding-top: 25px; }
@@ -301,8 +309,10 @@ em, i {
 .nav .nav-2 .nav2-1 .div5 ul li {
   width: 60px;
   height: 15px;
-  font-size: 14px;
   padding: 10px; }
+
+.nav .nav-2 .nav2-1 .div5 ul li a {
+  font-size: 14px; }
 
 .nav .nav-2 .nav2-1 .div5 ul li:nth-child(1) {
   padding-top: 25px; }
@@ -371,7 +381,7 @@ em, i {
 
 .NEW .NEW-1 {
   width: 1326px;
-  height: 176px;
+  height: 200px;
   background: yellow; }
 
 .NEW .NEW-1 h2 {
@@ -400,7 +410,7 @@ em, i {
 
 .NEW .NEW-2 {
   width: 1326px;
-  height: 536px;
+  height: 512px;
   background: #ffffff; }
 
 .NEW .NEW-2 p {
@@ -413,24 +423,25 @@ em, i {
 .NEW .NEW-2 .div1 {
   float: left;
   width: 1100px;
-  height: 536px; }
+  height: 512px; }
 
 .NEW .NEW-2 .div1 .div1-1 {
   float: left;
-  width: 159px;
-  height: 412px;
-  margin-left: 120px;
-  padding-top: 125px; }
+  width: 230px;
+  height: 437px;
+  margin-left: 90px; }
 
 .NEW .NEW-2 .div1 .div1-1 #img1 {
-  width: 159px;
-  height: 154px; }
+  width: 210px;
+  height: 200px;
+  padding-left: 10px;
+  margin-top: 100px; }
 
 .NEW .NEW-2 .div1 .div1-1 dl {
   width: 100px;
-  height: 190px;
+  height: 140px;
   padding-left: 58px;
-  padding-top: 66px; }
+  padding-top: 50px; }
 
 .NEW .NEW-2 .div1 .div1-1 dl #img2 {
   width: 48px;
@@ -449,21 +460,22 @@ em, i {
 
 .NEW .NEW-2 .div1 .div1-2 {
   float: left;
-  width: 162px;
-  height: 412px;
+  width: 230px;
+  height: 437px;
   /* background:yellow; */
-  margin-left: 100px;
-  padding-top: 125px; }
+  margin-left: 20px; }
 
 .NEW .NEW-2 .div1 .div1-2 #img1 {
-  width: 162px;
-  height: 154px; }
+  width: 210px;
+  height: 200px;
+  margin-top: 100px;
+  padding-left: 10px; }
 
 .NEW .NEW-2 .div1 .div1-2 dl {
   width: 100px;
-  height: 190px;
+  height: 140px;
   padding-left: 58px;
-  padding-top: 66px; }
+  padding-top: 50px; }
 
 .NEW .NEW-2 .div1 .div1-2 dl #img2 {
   width: 48px;
@@ -482,20 +494,21 @@ em, i {
 
 .NEW .NEW-2 .div1 .div1-3 {
   float: left;
-  width: 154px;
-  height: 412px;
-  margin-left: 90px;
-  padding-top: 125px; }
+  width: 230px;
+  height: 437px;
+  margin-left: 20px; }
 
 .NEW .NEW-2 .div1 .div1-3 #img1 {
-  width: 154px;
-  height: 170px; }
+  width: 210px;
+  height: 180px;
+  padding-left: 10px;
+  margin-top: 100px; }
 
 .NEW .NEW-2 .div1 .div1-3 dl {
   width: 100px;
-  height: 190px;
+  height: 140px;
   padding-left: 58px;
-  padding-top: 66px; }
+  padding-top: 50px; }
 
 .NEW .NEW-2 .div1 .div1-3 dl #img2 {
   width: 48px;
@@ -514,20 +527,21 @@ em, i {
 
 .NEW .NEW-2 .div1 .div1-4 {
   float: left;
-  width: 130px;
-  height: 412px;
-  margin-left: 110px;
-  padding-top: 125px; }
+  width: 220px;
+  height: 437px;
+  margin-left: 20px; }
 
 .NEW .NEW-2 .div1 .div1-4 #img1 {
-  width: 130px;
-  height: 170px; }
+  width: 210px;
+  height: 200px;
+  padding-left: 4px;
+  margin-top: 100px; }
 
 .NEW .NEW-2 .div1 .div1-4 dl {
   width: 100px;
-  height: 190px;
+  height: 140px;
   padding-left: 58px;
-  padding-top: 66px; }
+  padding-top: 50px; }
 
 .NEW .NEW-2 .div1 .div1-4 dl #img2 {
   width: 48px;
@@ -560,7 +574,7 @@ em, i {
   height: 97px; }
 
 .zhutui .zhutui-1 h2 {
-  font-size: 42px;
+  font-size: 40px;
   color: #333333;
   font-weight: 900px;
   text-align: center;
@@ -584,7 +598,7 @@ em, i {
 
 .zhutui .zhutui-2 {
   width: 990px;
-  height: 421px;
+  height: 610px;
   padding: 0px 168px 0px 168px; }
 
 .zhutui .zhutui-2 .zhutui-top {
@@ -600,6 +614,24 @@ em, i {
   margin-right: 20px;
   margin-top: 104px; }
 
+/*.zhutui .zhutui-2  ol{
+		// float:left;
+	}
+	.zhutui .zhutui-2  ol li{
+		float:left;
+		// left:-160px;
+		// z-index:2;
+	}
+	.zhutui .zhutui-2  ol li:nth-child(1){
+		 // padding-left:150px;
+	}
+	.zhutui .zhutui-2  ol li img{
+		width:64px;
+	 	height:26px;
+	 	// margin-top:250px;
+	 	 // padding-right:210px;
+	 	
+	}*/
 .zhutui .zhutui-2 .zhutui-bottom {
   width: 991px;
   height: 108px;
