@@ -2,248 +2,391 @@
 <html lang="en">
 	<head>
 	<meta charset="UTF-8">
-	<title>商品列表页</title>
+	<title>优购时尚--商品列表页</title>
+	<link rel="stylesheet" href="css/list.min.css">
+	<script src = "js/require.js" async = "true" defer data-main = "js/main1"></script> 
+	<script>
+		// 商品内容json部分
+		/*var obj =[{
+			child1:{
+				id:0,
+				img:'images/shuangjianbao1.jpg',
+				h3:'限时抢￥169',
+				p:'Teenmix/天美意夏黑色织物时尚休闲简约学院风女双肩包17C10BX7',
+				span:'￥169',
+				i:'￥368'
+			},
+			child2:{
+				id:1,
+				img:'images/shuangjianbao2.jpg',
+				h3:'限时抢￥299',
+				p:'BASTO/百思图冬季专柜同款布面/牛皮时尚休闲男双肩包8256-DX7',
+				span:'￥299',
+				i:'￥1299'
+			},
+			child3:{
+				id:2,
+				img:'images/shuangjianbao3.jpg',
+				h3:'限时抢￥299',
+				p:'BASTO/百思图冬季专柜同款布面/牛皮时尚休闲男双肩包8221DDX7',
+				span:'￥299',
+				i:'￥1299'
+			},
+			child4:{
+				id:3,
+				img:'images/shuangjianbao4.jpg',
+				h3:'限时抢￥298',
+				p:'Teenmix/天美意夏绿色织物时尚迷彩学院风中性双肩包62193BX7',
+				i:'￥298'
+			}
+
+		}]
+
+		var str = JSON.stringify(obj);
+		document.write(str);*/
+
+
+
+	</script>
 	</head>
 	<body>
+		<!-- 顶部 -->
+	 	<div class = "top">
+			<a href=""><img src="images/top.jpg" alt=""></a>
+		</div> 
 		<!-- 头部 -->
-	<div class = "head">
-		<ul>
-			<li class = "li1"><a href="">关注</a></li>
-			<li><a href="">下载App</a></li>
-			<li class = "li3"><a href="">登录</a></li>
-			<li><a href="">/&nbsp;&nbsp;&nbsp;注册</a></li>
-			<li class = "li5"><a href="">收藏</a></li>
-			<li class = "li6"><a href="">购物袋</a></li>
-			<li><a href="">公告</a></li>
-		</ul>
-	</div>
-	<!-- 内容 -->
-	<div class ="content">
-		<!--导航条  -->
-		<div class = "nav" id = "nav">
-			<div class = "nav-1">
-				<h2><a href=""><img src="images/logo.png" alt=""></a></h2>
-			</div>
-			<div class = "nav-2">
-				<!-- 左侧导航条 -->
-				<div class = "nav2-1" id = "nav1">
-					<ul class = "ul1">
-						<li><a href="">首页</a></li>
-						<li class = "li2" id = "li22"><a href="">女鞋</a></li>
-						<li><a href="">男鞋</a></li>
-						<li><a href="">运动</a></li>
-						<li><a href="">户外</a></li>
-						<li><a href="">儿童</a></li>
-						<li><a href="">箱包</a></li>		
-					</ul>
-					<!-- 隐藏导航 -->
-					<div class = "title">
-						<div class = "div1">
-							<h1>品牌</h1>
-							<ul>
-								<li><a href="">百丽</a></li>
-								<li><a href="">天美意</a></li>
-								<li><a href="">森达</a></li>
-								<li><a href="">思加图</a></li>
-								<li><a href="">暇步士</a></li>
-								<li><a href="">百思图</a></li>
-							</ul>
-							<ol>
-								<li><a href="">她他</a></li>
-								<li><a href="">妙丽</a></li>
-								<li><a href="">真美诗</a></li>
-								<li><a href="">抜佳</a></li>
-								<li><a href="">卡洛驰</a></li>
-								<li><a href="">Jipi Japa</a></li>
-							</ol>
-						</div>
-						<div class = "div2">
-							<h1>女士单鞋</h1>
-							<ul>
-								<li><a href="">百丽</a></li>
-								<li><a href="">天美意</a></li>
-								<li><a href="">森达</a></li>
-								<li><a href="">思加图</a></li>
-								<li><a href="">暇步士</a></li>
-								<li><a href="">百思图</a></li>
-							</ul>
-							<ol>
-								<li><a href="">她他</a></li>
-								<li><a href="">妙丽</a></li>
-								<li><a href="">真美诗</a></li>
-								<li><a href="">抜佳</a></li>
-								<li><a href="">卡洛驰</a></li>
-								<li><a href="">Jipi Japa</a></li>
-							</ol>
-						</div>
-						<div class = "div3">
-							<h1>女士靴子</h1>
-							<ul>
-								<li><a href="">百丽</a></li>
-								<li><a href="">天美意</a></li>
-								<li><a href="">森达</a></li>
-								<li><a href="">思加图</a></li>
-								<li><a href="">暇步士</a></li>
-								<li><a href="">百思图</a></li>
-							</ul>
-							<ol>
-								<li><a href="">她他</a></li>
-								<li><a href="">妙丽</a></li>
-								<li><a href="">真美诗</a></li>
-								<li><a href="">抜佳</a></li>
-								<li><a href="">卡洛驰</a></li>
-								<li><a href="">Jipi Japa</a></li>
-							</ol>
-						</div>
-						<div class = "div4">
-							<h1>女士凉鞋</h1>
-							<ul>
-								<li><a href="">百丽</a></li>
-								<li><a href="">天美意</a></li>
-								<li><a href="">森达</a></li>
-								<li><a href="">思加图</a></li>
-								<li><a href="">暇步士</a></li>
-								<li><a href="">百思图</a></li>
-							</ul>
-							<ol>
-								<li><a href="">她他</a></li>
-								<li><a href="">妙丽</a></li>
-								<li><a href="">真美诗</a></li>
-								<li><a href="">抜佳</a></li>
-								<li><a href="">卡洛驰</a></li>
-								<li><a href="">Jipi Japa</a></li>
-							</ol>
-						</div>
-						<div class = "div5">
-							<h1>关键词</h1>
-							<ul>
-								<li><a href="">百丽</a></li>
-								<li><a href="">天美意</a></li>
-								<li><a href="">森达</a></li>
-								<li><a href="">思加图</a></li>
-								<li><a href="">暇步士</a></li>
-								<li><a href="">百思图</a></li>
-							</ul>
-						</div>
-					</div>
-
-				</div>
-				<!-- 右侧搜索框 -->
-				<div class = "nav2-2">
-					<input type="text">
-					<a href=""><img src="images/sousuo.jpg" alt=""></a>
-				</div>
-			</div>
-		</div>
-		<!-- 轮播图 -->
-		<div class = "content1">
-		</div>	
-	</div>
-	<!-- 底部 -->
-	<div class = "foot">
-		<div class="foot-1">
+		<div class = "head">
 			<ul>
-				<li>
-					<i><img src="images/foot8.jpg" alt=""></i>
-					<a href="">正品保证</a>
-				</li>
-				<li>
-					<i><img src="images/foot9.jpg" alt=""></i>
-					<a href="">10天退换货</a>
-				</li>
-				<li>
-					<i><img src="images/foot7.jpg" alt=""></i>
-					<a href="">10天调补差价额</a>
-				</li>
-				<li>
-					<i><img src="images/foot10.jpg" alt=""></i>
-					<a href="">09:00-21:00在线客服</a>
-				</li>
+				<li class = "li1"><a href="">关注</a></li>
+				<li><a href="">下载App</a></li>
+				<li class = "li3"><a href="">登录</a></li>
+				<li><a href="">/&nbsp;&nbsp;&nbsp;注册</a></li>
+				<li class = "li5"><a href="">收藏</a></li>
+				<li class = "li6"><a href="">购物袋</a></li>
+				<li><a href="">公告</a></li>
 			</ul>
 		</div>
-		<div class="foot-2">
-			<div class="div1">
-				 <ul>
-					<h2>新手帮助</h2>
-					<li><a href="">交易条款协议</a></li>
-					<li><a href="">注册新用户</a></li>
-					<li><a href="">会员积分详情</a></li>
-				</ul> 
-			</div>
-			<div class="div2">
-				<ul>
-					<h2>购物指南</h2>
-					<li><a href="">订购流程</a></li>
-					<li><a href="">验货与签收</a></li>
-					<li><a href="">订单配送</a></li>
-				</ul> 
-			</div>
-			<div class="div3">
-				<ul>
-					<h2>支付/配送</h2>
-					<li><a href="">支付方式</a></li>
-					<li><a href="">配送方式</a></li>
-					<li><a href="">配送时间及运费</a></li>
-				</ul> 
-			</div>
-			<div class="div4">
-				<ul>
-					<h2>售后服务</h2>
-					<li><a href="">退换货政策</a></li>
-					<li><a href="">退款说明</a></li>
-					<li><a href="">发票制度</a></li>
-				</ul>
-			</div>
-			<div class="div5">
-				<ul>
-					<h2>会员服务</h2>
-					<li><a href="">找回密码</a></li>
-					<li><a href="">联系我们</a></li>
-				</ul>
-			</div>
-			<div class="div6">
-				<ul>
-					<h2>优购客服</h2>
-					<li><a href="">在线咨询</a></li>
-					<li><a href="">Email:ygservice@bell.com.cn</a></li>
-					<li><a href="">微信客服：优购时尚商城</a></li>
-				</ul>	
-			</div>
-		</div>
-		<div class="foot-3">
-			<div class = "div1">
-				<ul>
-					<li><a href=""><img src="images/foot4.png" alt=""></a></li>
-					<li><a href=""><img src="images/foot3.jpg" alt=""></a></li>
-					<li><a href=""><img src="images/foot1.png" alt=""></a></li>
-					<li><a href=""><img src="images/foot2.png" alt=""></a></li>
-				</ul>
-				<ol>
-					<li>
-						<img src="images/foot5.jpg" alt="">
-						<p>扫描下载手机客户端</p>
-					</li>
-					<li>
-						<img src="images/foot6.jpg" alt="">
-						<p class = "p2">关注公众号</p>
-					</li>
-				</ol>
-			</div>
-			<div class = "div2">
-				<ul>
-					<li><a href="">关于优购</a></li>
-					<li><a href="">集团采购</a></li>
-					<li><a href="">招贤纳士</a></li>
-					<li><a href="">手机优购</a></li>
-					<li><a href="">联系我们</a></li>
-					<li class = "li6"><a href="">友情链接</a></li>
-				</ul>
-			</div>
-			<div class = "div3">
-				<p>Copyright @ 2011-2016 Yougo Technology Co.,Ltd.粤ICP备09070608号-4 增值电信业务经营许可证: 粤 B2-20090203 深公网安备：4403101910665 粤公网安备：44030502000017</p>
-			</div>
+		<!-- 内容 -->
+		<div class ="content">
+			<!--导航条  -->
+			<div class = "nav" id = "nav">
+				<div class = "nav-1">
+					<h2><a href=""><img src="images/logo.png" alt=""></a></h2>
+				</div>
+				<div class = "nav-2">
+					<!-- 左侧导航条 -->
+					<div class = "nav2-1" id = "nav1">
+						<ul class = "ul1">
+							<li><a href="">首页</a></li>
+							<li class = "li2" id = "li22"><a href="">女鞋</a></li>
+							<li><a href="">男鞋</a></li>
+							<li><a href="">运动</a></li>
+							<li><a href="">户外</a></li>
+							<li><a href="">儿童</a></li>
+							<li><a href="">箱包</a></li>		
+						</ul>
+						<!-- 隐藏导航 -->
+						<div class = "title">
+							<div class = "div1">
+								<h1>品牌</h1>
+								<ul>
+									<li><a href="">百丽</a></li>
+									<li><a href="">天美意</a></li>
+									<li><a href="">森达</a></li>
+									<li><a href="">思加图</a></li>
+									<li><a href="">暇步士</a></li>
+									<li><a href="">百思图</a></li>
+								</ul>
+								<ol>
+									<li><a href="">她他</a></li>
+									<li><a href="">妙丽</a></li>
+									<li><a href="">真美诗</a></li>
+									<li><a href="">抜佳</a></li>
+									<li><a href="">卡洛驰</a></li>
+									<li><a href="">Jipi Japa</a></li>
+								</ol>
+							</div>
+							<div class = "div2">
+								<h1>女士单鞋</h1>
+								<ul>
+									<li><a href="">百丽</a></li>
+									<li><a href="">天美意</a></li>
+									<li><a href="">森达</a></li>
+									<li><a href="">思加图</a></li>
+									<li><a href="">暇步士</a></li>
+									<li><a href="">百思图</a></li>
+								</ul>
+								<ol>
+									<li><a href="">她他</a></li>
+									<li><a href="">妙丽</a></li>
+									<li><a href="">真美诗</a></li>
+									<li><a href="">抜佳</a></li>
+									<li><a href="">卡洛驰</a></li>
+									<li><a href="">Jipi Japa</a></li>
+								</ol>
+							</div>
+							<div class = "div3">
+								<h1>女士靴子</h1>
+								<ul>
+									<li><a href="">百丽</a></li>
+									<li><a href="">天美意</a></li>
+									<li><a href="">森达</a></li>
+									<li><a href="">思加图</a></li>
+									<li><a href="">暇步士</a></li>
+									<li><a href="">百思图</a></li>
+								</ul>
+								<ol>
+									<li><a href="">她他</a></li>
+									<li><a href="">妙丽</a></li>
+									<li><a href="">真美诗</a></li>
+									<li><a href="">抜佳</a></li>
+									<li><a href="">卡洛驰</a></li>
+									<li><a href="">Jipi Japa</a></li>
+								</ol>
+							</div>
+							<div class = "div4">
+								<h1>女士凉鞋</h1>
+								<ul>
+									<li><a href="">百丽</a></li>
+									<li><a href="">天美意</a></li>
+									<li><a href="">森达</a></li>
+									<li><a href="">思加图</a></li>
+									<li><a href="">暇步士</a></li>
+									<li><a href="">百思图</a></li>
+								</ul>
+								<ol>
+									<li><a href="">她他</a></li>
+									<li><a href="">妙丽</a></li>
+									<li><a href="">真美诗</a></li>
+									<li><a href="">抜佳</a></li>
+									<li><a href="">卡洛驰</a></li>
+									<li><a href="">Jipi Japa</a></li>
+								</ol>
+							</div>
+							<div class = "div5">
+								<h1>关键词</h1>
+								<ul>
+									<li><a href="">百丽</a></li>
+									<li><a href="">天美意</a></li>
+									<li><a href="">森达</a></li>
+									<li><a href="">思加图</a></li>
+									<li><a href="">暇步士</a></li>
+									<li><a href="">百思图</a></li>
+								</ul>
+							</div>
+						</div>
 
-		</div>
-	</div> 
+					</div>
+					<!-- 右侧搜索框 -->
+					<div class = "nav2-2">
+						<input type="text">
+						<a href=""><img src="images/sousuo.jpg" alt=""></a>
+					</div>
+				</div>
+			</div>
+			<!-- 正文部分 -->
+			<div class = "content-main">
+				<!--标题部分  -->
+				<div id = 'menu'>
+					<!-- title-top -->
+    				<div class = 'm-t'>
+    					<a href="index.html">首页</a>
+    	    			<span> > </span>
+    					<a href="list.html">箱包</a>
+    					<span> > </span>
+    					<a href="list.html">男包</a>
+    	    			<span> > </span>
+    	    			<a href="list.html">双肩包</a>
+    				</div>
+    				<!-- title-bottom -->
+    				<div class = 'm-b'>
+    					<h3>共 > 4个结果</h3>
+    					<p>
+    		  				 <a href="">新品</a>
+    		   				<a href="">热销</a>
+    		   				<a href="">推荐</a>
+    		   				<span>1 - 0页 /</span>
+    					</p>
+    				</div>
+    			</div>
+				<!-- 内容部分 -->
+    			<div id = 'main'>
+    				<!-- 左侧菜单栏部分 -->
+    				<div class = 'm-l'>
+    					<h5><img src="images/g2.png">品牌</h5>
+    					<h5><img src="images/g2.png">性别</h5>
+    					<h5><img src="images/g2.png">面料材质</h5>
+    					<h5><img src="images/g2.png">颜色</h5>
+    					<h5><img src="images/g2.png">流行元素</h5>
+    					<h5><img src="images/g2.png">价格</h5>
+        			</div>
+        			<!-- 右边商品列表部分 -->
+    				<div class = 'goods_box'>
+    					<ul>
+    						<!-- 图片1  -->
+    						 <!-- <li>
+		    					<a href="description.html">
+		    					    <img src = "images/shuangjianbao1.jpg" alt=""/>
+		    					    <h3>限时抢￥169</h3>
+		    					    <p>Teenmix/天美意夏黑色织物时尚休</br>闲简约学院风女双肩包17C10BX7</p>
+		    					</a>
+		    					<span>￥169</span>
+		    					<i>￥368</i>
+
+		    					<!-- <button id = "${arr[i].id}"  class = 'sc_btn'>加入购物车</button> -->
+	    				    <!-- </li>
+							<!-- 图片2 -->
+							<!-- <li>
+		    					<a href="description.html">
+		    					    <img src = "images/shuangjianbao2.jpg" alt=""/>
+		    					    <h3>限时抢￥299</h3>
+		    					    <p>BASTO/百思图冬季专柜同款布面/</br>牛皮时尚休闲男双肩包8256-DX7</p>
+		    					</a>
+		    					<span>￥299</span>
+		    					<i>￥1299</i>
+
+		    					<!-- <button id = "${arr[i].id}"  class = 'sc_btn'>加入购物车</button> -->
+	    				    <!-- </li> 
+	    				   
+	    				    <!-- 图片3 -->
+	    				    <!-- <li>
+		    					<a href="description.html">
+		    					    <img src = "images/shuangjianbao3.jpg" alt=""/>
+		    					    <h3>限时抢￥299</h3>
+		    					    <p>BASTO/百思图冬季专柜同款布面/</br>牛皮时尚休闲男双肩包8221DDX7</p>
+		    					</a>
+		    					<span>￥299</span>
+		    					<i>￥1299</i> -->
+
+		    					<!-- <button id = "${arr[i].id}"  class = 'sc_btn'>加入购物车</button> -->
+	    				   <!--  </li> -->
+	    				    <!-- 图片4 -->
+	    				    <!-- <li>
+		    					<a href="description.html">
+		    					    <img src = "images/shuangjianbao4.jpg" alt=""/>
+		    					    <h3>限时抢￥298</h3>
+		    					    <p>Teenmix/天美意夏绿色织物时尚迷</br>彩学院风中性双肩包62193BX7</p>
+		    					</a>
+		    					<span>￥298</span>
+		    					<i>￥298</i>
+ -->
+		    					<!-- <button id = "${arr[i].id}"  class = 'sc_btn'>加入购物车</button> -->
+	    				    <!-- </li>  --> 
+    					</ul>
+    				</div>
+				</div>
+				<div id = "newpage">
+					<div id = "newpage-1">
+						<a href="" id = "a1"><p class = "p1">1</p></a>
+						<a href="list.html" id = "a2">0</a>
+					</div>
+				</div>	
+			</div>
+		<!-- 底部 -->
+		<div class = "foot">
+			<div class="foot-1">
+				<ul>
+					<li>
+						<i><img src="images/foot8.jpg" alt=""></i>
+						<a href="">正品保证</a>
+					</li>
+					<li>
+						<i><img src="images/foot9.jpg" alt=""></i>
+						<a href="">10天退换货</a>
+					</li>
+					<li>
+						<i><img src="images/foot7.jpg" alt=""></i>
+						<a href="">10天调补差价额</a>
+					</li>
+					<li>
+						<i><img src="images/foot10.jpg" alt=""></i>
+						<a href="">09:00-21:00在线客服</a>
+					</li>
+				</ul>
+			</div>
+			<div class="foot-2">
+				<div class="div1">
+					 <ul>
+						<h2>新手帮助</h2>
+						<li><a href="">交易条款协议</a></li>
+						<li><a href="">注册新用户</a></li>
+						<li><a href="">会员积分详情</a></li>
+					</ul> 
+				</div>
+				<div class="div2">
+					<ul>
+						<h2>购物指南</h2>
+						<li><a href="">订购流程</a></li>
+						<li><a href="">验货与签收</a></li>
+						<li><a href="">订单配送</a></li>
+					</ul> 
+				</div>
+				<div class="div3">
+					<ul>
+						<h2>支付/配送</h2>
+						<li><a href="">支付方式</a></li>
+						<li><a href="">配送方式</a></li>
+						<li><a href="">配送时间及运费</a></li>
+					</ul> 
+				</div>
+				<div class="div4">
+					<ul>
+						<h2>售后服务</h2>
+						<li><a href="">退换货政策</a></li>
+						<li><a href="">退款说明</a></li>
+						<li><a href="">发票制度</a></li>
+					</ul>
+				</div>
+				<div class="div5">
+					<ul>
+						<h2>会员服务</h2>
+						<li><a href="">找回密码</a></li>
+						<li><a href="">联系我们</a></li>
+					</ul>
+				</div>
+				<div class="div6">
+					<ul>
+						<h2>优购客服</h2>
+						<li><a href="">在线咨询</a></li>
+						<li><a href="">Email:ygservice@bell.com.cn</a></li>
+						<li><a href="">微信客服：优购时尚商城</a></li>
+					</ul>	
+				</div>
+			</div>
+			<div class="foot-3">
+				<div class = "div1">
+					<ul>
+						<li><a href=""><img src="images/foot4.png" alt=""></a></li>
+						<li><a href=""><img src="images/foot3.jpg" alt=""></a></li>
+						<li><a href=""><img src="images/foot1.png" alt=""></a></li>
+						<li><a href=""><img src="images/foot2.png" alt=""></a></li>
+					</ul>
+					<ol>
+						<li>
+							<img src="images/foot5.jpg" alt="">
+							<p>扫描下载手机客户端</p>
+						</li>
+						<li>
+							<img src="images/foot6.jpg" alt="">
+							<p class = "p2">关注公众号</p>
+						</li>
+					</ol>
+				</div>
+				<div class = "div2">
+					<ul>
+						<li><a href="">关于优购</a></li>
+						<li><a href="">集团采购</a></li>
+						<li><a href="">招贤纳士</a></li>
+						<li><a href="">手机优购</a></li>
+						<li><a href="">联系我们</a></li>
+						<li class = "li6"><a href="">友情链接</a></li>
+					</ul>
+				</div>
+				<div class = "div3">
+					<p>Copyright @ 2011-2016 Yougo Technology Co.,Ltd.粤ICP备09070608号-4 增值电信业务经营许可证: 粤 B2-20090203 深公网安备：4403101910665 粤公网安备：44030502000017</p>
+				</div>
+
+			</div>
+		</div> 
 	</body>
 </html>

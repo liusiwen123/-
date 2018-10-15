@@ -1,3 +1,4 @@
+// 首页JS特效
 define(["jquery"], function($) {
 	function main (){
 		$(function(){
@@ -114,7 +115,7 @@ define(["jquery"], function($) {
 					// console.log(res.length);
 					var html = "";
 						html += `<div class = "div1-1">
-									<a href=""><img src="images/xinpin1.jpg" alt="" id = "img1"></a>
+									<a href="list.html"><img src="images/xinpin1.jpg" alt="" id = "img1"></a>
 									<dl>
 										<img src="images/tu12.png" alt="" id = "img2">
 										<dt><a href="">帅气 短靴</a></dt>

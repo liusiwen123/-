@@ -18,6 +18,7 @@ gulp.task("images",function(){
 // 执行css代码 处理css文件
 // 下载插件
 // 引入
+// 首页css  index.css
 const scss = require("gulp-sass-china");
 const minifyCSS = require("gulp-minify-css");
 const rename = require("gulp-rename");
@@ -31,6 +32,42 @@ gulp.task("scss",function(){
 	.pipe(connect.reload());
 })
 
+// 商品列表css      list.css
+// const scss = require("gulp-sass-china");
+// const minifyCSS = require("gulp-minify-css");
+// const rename = require("gulp-rename");
+gulp.task("scss",function(){
+	return gulp.src("list.scss")
+	.pipe(scss())
+	.pipe(gulp.dest("dist/css"))
+	.pipe(minifyCSS())
+	.pipe(rename("list.min.css"))
+	.pipe(gulp.dest("dist/css"))
+	.pipe(connect.reload());
+})
+
+// 注册页面css  register.css
+gulp.task("scss",function(){
+	return gulp.src("register.scss")
+	.pipe(scss())
+	.pipe(gulp.dest("dist/css"))
+	.pipe(minifyCSS())
+	.pipe(rename("register.min.css"))
+	.pipe(gulp.dest("dist/css"))
+	.pipe(connect.reload());
+})
+
+
+// 登陆页面css  login.css
+gulp.task("scss",function(){
+	return gulp.src("login.scss")
+	.pipe(scss())
+	.pipe(gulp.dest("dist/css"))
+	.pipe(minifyCSS())
+	.pipe(rename("login.min.css"))
+	.pipe(gulp.dest("dist/css"))
+	.pipe(connect.reload());
+})
 
 
 
@@ -63,6 +100,9 @@ gulp.task("watch",function(){
 	gulp.watch(["*.json", "!package.json"],["data"]);
 	gulp.watch(["*.{jpg,png}"],["images"]);
 	gulp.watch(["index.scss"],["scss"]);
+	gulp.watch(["list.scss"],["scss"]);
+	gulp.watch(["register.scss"],["scss"]);
+	gulp.watch(["login.scss"],["scss"]);
 	gulp.watch(["*.js", "!gulpfile.js"], ['scripts']);
 	gulp.watch(["*.html"],["copy-html"]);
 })
