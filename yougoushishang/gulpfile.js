@@ -45,6 +45,16 @@ gulp.task("scss",function(){
 	.pipe(gulp.dest("dist/css"))
 	.pipe(connect.reload());
 })
+// 登陆页面css  login.css
+gulp.task("scss",function(){
+	return gulp.src("login.scss")
+	.pipe(scss())
+	.pipe(gulp.dest("dist/css"))
+	.pipe(minifyCSS())
+	.pipe(rename("login.min.css"))
+	.pipe(gulp.dest("dist/css"))
+	.pipe(connect.reload());
+})
 
 // 注册页面css  register.css
 gulp.task("scss",function(){
@@ -58,16 +68,7 @@ gulp.task("scss",function(){
 })
 
 
-// 登陆页面css  login.css
-gulp.task("scss",function(){
-	return gulp.src("login.scss")
-	.pipe(scss())
-	.pipe(gulp.dest("dist/css"))
-	.pipe(minifyCSS())
-	.pipe(rename("login.min.css"))
-	.pipe(gulp.dest("dist/css"))
-	.pipe(connect.reload());
-})
+
 
 
 
@@ -101,8 +102,8 @@ gulp.task("watch",function(){
 	gulp.watch(["*.{jpg,png}"],["images"]);
 	gulp.watch(["index.scss"],["scss"]);
 	gulp.watch(["list.scss"],["scss"]);
-	gulp.watch(["register.scss"],["scss"]);
 	gulp.watch(["login.scss"],["scss"]);
+	gulp.watch(["register.scss"],["scss"]);
 	gulp.watch(["*.js", "!gulpfile.js"], ['scripts']);
 	gulp.watch(["*.html"],["copy-html"]);
 })

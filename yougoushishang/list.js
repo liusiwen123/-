@@ -30,7 +30,7 @@ define(["jquery"], function($) {
 	// 2.内容商品部分
 	// ajax 加载数据
 			$.ajax({
-				url:'data/data.json',
+				url:'data/list.json',
 				type:'GET',
 				success:function(res){
 					// alert(res);
@@ -89,18 +89,6 @@ define(["jquery"], function($) {
 
 
 			})
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 		})

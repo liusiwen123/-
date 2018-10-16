@@ -1,18 +1,18 @@
 @import "base";
 // 顶部
 	.top{
-		width:1326px;
+		// width:1326px;
 		height:51px;
 	}
 	.top img{
-		width:1326px;
+		// width:1326px;
 		height:51px;
 	}
 // 头部
 	.head{
 		// min-width:1200px;
 		height:40px;
-		width:1326px;
+		// width:1326px;
 		background:#333333;
 	}
 	.head ul li{
@@ -26,7 +26,7 @@
 	}
 	.head ul .li3{
 	
-		padding-left:650px;
+		padding-left:600px;
 		padding-right:5px;
 	}
 	.head ul li:nth-child(4){
@@ -54,19 +54,19 @@
 	// 内容
 	.content{
 		height:919px;
-		width:1326px;
+		// width:1326px;
 		 // background:pink;
 	}
 // 导航条部分
 		.nav{
 			height:222px;
-			width:1326px;
+			// width:1326px;
 			 border-bottom:1px solid #eeeeee;
 		// background:blue;		
 		}
 		.nav .nav-1{
 			height:112px;
-			width:1326px;
+			// width:1326px;
 		// background:pink;
 		}
 		.nav .nav-1 img{
@@ -77,7 +77,7 @@
 		}
 		.nav .nav-2{
 			height:110px;
-			width:1326px;
+			// width:1326px;
 			
 			// background:yellow;
 		}
@@ -113,7 +113,7 @@
 		// 大的div
 		 .nav .nav-2 .nav2-1 .title{
 			position:absolute;
-			width:1326px;
+			// width:1326px;
 			height:350px;
 			background:white;
 			border-top:1px black solid;
@@ -371,12 +371,12 @@
 		
 // 正文部分
 	.content-main{
-		width:1326px;
+		// width:1326px;
 		height:701px;
 		// background:yellow;
 	}
 	#menu {
-		width:1326px;
+		// width:1326px;
 		height:168px;
 		// overflow:hidden;
  		// padding: 0 34px;
@@ -433,7 +433,7 @@
   	}
 
 	#main {
-		width:1326px;
+		// width:1326px;
 		height:380px;
   		// padding: 0 36px;
   		overflow: hidden;
@@ -538,7 +538,7 @@
 
 	#newpage{
 		height:153px;
-		width:1326px;
+		// width:1326px;
 		// background:yellow;
 	}
 	#newpage  #newpage-1{
@@ -598,13 +598,13 @@
 // 底部
 	.foot{
 		height:593px;
-		width:1326px;
+		// width:1326px;
 		background:#333333;
 	}
 // foot-1
 	.foot .foot-1{
 		height:116px;
-		width:1326px;
+		// width:1326px;
 		// background:green;
 	}
 	.foot .foot-1 ul li{
@@ -628,7 +628,7 @@
 // foot-2
 	.foot .foot-2{
 		float:left;	
-		width:1326px;
+		// width:1326px;
 		height:212px;
 		border-top:1px solid #666666;
 		// background:skyblue;
@@ -763,7 +763,7 @@
 // foot-3
 	.foot .foot-3{
 		float:left;
-		width:1326px;
+		// width:1326px;
 		height:267px;
 		// background:pink;
 
