@@ -223,6 +223,7 @@
     	height: 14px;
     	width:20px;
     	font-size:15px;
+    	display:none;
 	}
 	.content .content-2 .cot-form .form .dl1 dt .div2 p{
 		font-size:12px;
@@ -294,6 +295,7 @@
     	height: 14px;
     	width:20px;
     	font-size:15px;
+    	display:none;
 	}
 	.content .content-2 .cot-form .form .dl2 dt .div2 p{
 		font-size:12px;
@@ -325,9 +327,10 @@
 	}
 	// 左边
 	.content .content-2 .cot-form .form .yanzhengma .dl3 dd .div-left{
-		height:36px;
+		height:38px;
 		float:left;
 		position:relative;
+
 	}
 	.content .content-2 .cot-form .form .yanzhengma .dl3 dd .div-left .label1{
 		font-size: 12px;
@@ -338,12 +341,21 @@
     	width: 60px;
     	float:left;
     	color: #000;
-    	background:url(../images/label.png) no-repeat 0 -95px;
-    	text-indent: 20px;
+    	 background:url(../images/label.png) no-repeat 0 -95px;
+    	 text-indent: 20px;
+	}
+	.content .content-2 .cot-form .form .yanzhengma .dl3 .div-left #input22{
+		background: 0;
+    	border: 0;
+    	float: right;
+    	height: 36px;
+    	line-height: 36px;
+    	// padding: 0;
+    	font-size:12px;
 	}
 	// 右边
 	.content .content-2 .cot-form .form .yanzhengma .dl3 dd .div-right{
-		float:left;
+		float:right;
 	}
 	// 隐藏输验证码
 	.content .content-2 .cot-form .form .yanzhengma .dl3 dt{
@@ -365,6 +377,7 @@
     	height: 14px;
     	width:20px;
     	font-size:15px;
+    	display:none;
 	}
 	.content .content-2 .cot-form .form .yanzhengma .dl3 dt .div3 p{
 		font-size:12px;
@@ -425,13 +438,16 @@
     	text-align: center;
    		FONT-FAMILY: Arial,Verdana;
    		font-size:10px;
+   		color: #666;
 
 	}
 	.foot p a{
 		font-size:10px;
 		padding-right:20px;
+		color: #666;
 	}
 	.foot p .a22{
 		padding-left:25px;
+		color: #666;
 	}
 

@@ -67,6 +67,16 @@ gulp.task("scss",function(){
 	.pipe(connect.reload());
 })
 
+// 商品详情页css details.css
+ gulp.task("scss",function(){
+	return gulp.src("details.scss")
+	.pipe(scss())
+	.pipe(gulp.dest("dist/css"))
+	.pipe(minifyCSS())
+	.pipe(rename("details.min.css"))
+	.pipe(gulp.dest("dist/css"))
+	.pipe(connect.reload());
+})
 
 
 
@@ -91,6 +101,13 @@ gulp.task("data",function(){
 })
 
 
+//拷贝PHP文件
+gulp.task("copy-php",function(){
+	return gulp.src("*.php")
+	.pipe(gulp.dest("dist/php"))
+	.pipe(connect.reload());
+})
+
 // 一次性执行多个任务
 gulp.task("build",["data","images","scss","scripts","copy-html"],function(){
 	console.log("项目建立成功");
@@ -104,8 +121,12 @@ gulp.task("watch",function(){
 	gulp.watch(["list.scss"],["scss"]);
 	gulp.watch(["login.scss"],["scss"]);
 	gulp.watch(["register.scss"],["scss"]);
+	gulp.watch(["details.scss"],["scss"]);
 	gulp.watch(["*.js", "!gulpfile.js"], ['scripts']);
 	gulp.watch(["*.html"],["copy-html"]);
+	gulp.watch(["*.php"],["copy-php"]);
+
+
 })
 // 启动服务器
 // 下载插件

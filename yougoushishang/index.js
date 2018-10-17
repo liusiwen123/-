@@ -123,7 +123,7 @@ define(["jquery"], function($) {
 									</dl>
 								</div>
 								<div class = "div1-2">
-									<a href=""><img src="images/xinpin2.jpg" alt="" id = "img1"></a>
+									<a href="details.html"><img src="images/xinpin2.jpg" alt="" id = "img1"></a>
 									<dl>
 										<img src="images/tu7.png" alt="" id = "img2">
 										<dt><a href="">休闲 短靴</a></dt>

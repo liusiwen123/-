@@ -106,10 +106,10 @@ em, i {
 
 .content .content-2 .cot-form {
   width: 376px;
-  height: 530px;
+  height: 528px;
   background: #fff;
   border: 1px solid black;
-  margin-top: 50px; }
+  margin-top: 18px; }
 
 .content .content-2 .cot-form ul {
   border-bottom: 1px solid #f3f3f3;
@@ -142,7 +142,7 @@ em, i {
 
 .content .content-2 .cot-form .form {
   width: 348px;
-  height: 355px;
+  height: 397px;
   padding-top: 30px;
   margin: 0 15px; }
 
@@ -161,13 +161,13 @@ em, i {
   width: 338px; }
 
 .content .content-2 .cot-form .form .dl1 dd {
-  width: 323px;
+  width: 330px;
   height: 38px;
   float: left;
   font-size: 14px;
   color: #000;
   display: block;
-  padding-left: 15px; }
+  margin-left: 15px; }
 
 .content .content-2 .cot-form .form .dl1 dd .div1 {
   border: 1px solid #e3e2e2;
@@ -176,13 +176,25 @@ em, i {
   float: left;
   position: relative; }
 
-.content .content-2 .cot-form .form .dl1 dd .div1 .icon-ren111 {
+.content .content-2 .cot-form .form .dl1 dd .div1 .label1 {
+  font-size: 12px;
+  height: 38px;
+  line-height: 38px;
+  margin-left: 10px;
+  text-align: left;
+  width: 60px;
   float: left;
-  margin-top: 10px;
-  margin-left: 12px;
-  height: 16px;
-  width: 48px;
-  font-size: 20px; }
+  color: #000; }
+
+.content .content-2 .cot-form .form .dl1 dd .div1 .label1 span {
+  float: left; }
+
+.content .content-2 .cot-form .form .dl1 dd .div1 .label1 .icon-xlcd {
+  float: right;
+  margin-top: -4px;
+  height: 5px;
+  width: 10px;
+  font-size: 18px; }
 
 .content .content-2 .cot-form .form .dl1 dd .div1 .input1 {
   border: 0;
@@ -200,7 +212,7 @@ em, i {
   padding-left: 15px; }
 
 .content .content-2 .cot-form .form .dl1 dt .div2 {
-  width: 315px;
+  width: 330px;
   height: 18px;
   margin-top: 4px; }
 
@@ -209,70 +221,10 @@ em, i {
   margin-left: 10px;
   height: 14px;
   width: 20px;
-  font-size: 15px; }
+  font-size: 15px;
+  display: none; }
 
 .content .content-2 .cot-form .form .dl1 dt .div2 p {
-  font-size: 12px; }
-
-.content .content-2 .cot-form .form .dl2 {
-  width: auto;
-  margin: 0;
-  display: block;
-  height: 66px;
-  width: 338px; }
-
-.content .content-2 .cot-form .form .dl2 dd {
-  width: 323px;
-  height: 38px;
-  float: left;
-  font-size: 14px;
-  color: #000;
-  display: block;
-  padding-left: 15px; }
-
-.content .content-2 .cot-form .form .dl2 dd .div1 {
-  border: 1px solid #e3e2e2;
-  height: 36px;
-  width: 311px;
-  float: left;
-  position: relative; }
-
-.content .content-2 .cot-form .form .dl2 dd .div1 .icon-buoumaotubiao32 {
-  float: left;
-  margin-top: 10px;
-  margin-left: 12px;
-  height: 16px;
-  width: 48px;
-  font-size: 20px; }
-
-.content .content-2 .cot-form .form .dl2 dd .div1 .input2 {
-  border: 0;
-  float: right;
-  height: 36px;
-  line-height: 36px;
-  padding: 0;
-  width: 235px; }
-
-.content .content-2 .cot-form .form .dl2 dt {
-  width: 315px;
-  height: 28px;
-  float: left;
-  line-height: 18px;
-  padding-left: 15px; }
-
-.content .content-2 .cot-form .form .dl2 dt .div2 {
-  width: 315px;
-  height: 18px;
-  margin-top: 4px; }
-
-.content .content-2 .cot-form .form .dl2 dt .div2 .icon-jianhao {
-  float: left;
-  margin-left: 10px;
-  height: 14px;
-  width: 20px;
-  font-size: 15px; }
-
-.content .content-2 .cot-form .form .dl2 dt .div2 p {
   font-size: 12px; }
 
 .content .content-2 .cot-form .form .yanzhengma {
@@ -303,7 +255,7 @@ em, i {
   float: left;
   position: relative; }
 
-.content .content-2 .cot-form .form .yanzhengma .dl3 dd .div-left .label1 {
+.content .content-2 .cot-form .form .yanzhengma .dl3 dd .div-left .label11 {
   font-size: 12px;
   height: 38px;
   line-height: 38px;
@@ -311,9 +263,16 @@ em, i {
   text-align: left;
   width: 60px;
   float: left;
-  color: #000;
-  background: url(../images/label.png) no-repeat 0 -95px;
-  text-indent: 20px; }
+  color: #000; }
+
+.content .content-2 .cot-form .form .yanzhengma .dl3 dd .div-left #input22 {
+  background: 0;
+  border: 0;
+  float: right;
+  height: 36px;
+  line-height: 36px;
+  padding: 0;
+  font-size: 12px; }
 
 .content .content-2 .cot-form .form .yanzhengma .dl3 dd .div-right {
   float: left; }
@@ -334,12 +293,239 @@ em, i {
   float: left;
   height: 14px;
   width: 20px;
-  font-size: 15px; }
+  font-size: 15px;
+  display: none; }
 
 .content .content-2 .cot-form .form .yanzhengma .dl3 dt .div3 p {
   font-size: 12px; }
 
-.content .content-2 .cot-form .form .p1 a {
+.content .content-2 .cot-form .form .dl33 {
+  width: auto;
+  margin: 0;
+  display: block;
+  height: 66px;
+  width: 323px;
+  padding-left: 15px; }
+
+.content .content-2 .cot-form .form .dl33 dd {
+  width: 330px;
+  height: 38px;
+  float: left;
+  font-size: 14px;
+  color: #000; }
+
+.content .content-2 .cot-form .form .dl33 dd .div-left {
+  height: 36px;
+  float: left;
+  position: relative; }
+
+.content .content-2 .cot-form .form .dl33 dd .div-left .label23 {
+  font-size: 12px;
+  height: 38px;
+  line-height: 38px;
+  margin-left: 10px;
+  text-align: left;
+  width: 60px;
+  float: left;
+  color: #000; }
+
+.content .content-2 .cot-form .form .dl33 dd .div-left #input23 {
+  background: 0;
+  border: 0;
+  float: left;
+  height: 36px;
+  line-height: 36px;
+  padding-left: 5px;
+  font-size: 12px; }
+
+.content .content-2 .cot-form .form .dl33 dd .div-right {
+  float: left; }
+
+.content .content-2 .cot-form .form .dl33 dd .div-right .a23 {
+  margin-left: 5px; }
+
+.content .content-2 .cot-form .form .dl33 dd .div-right .a23 span {
+  background: #323232;
+  color: #fff;
+  font-size: 12px;
+  height: 38px;
+  line-height: 38px;
+  margin-right: 17px;
+  padding: 0;
+  text-align: center;
+  width: 73px;
+  display: inline-block; }
+
+.content .content-2 .cot-form .form .dl33 dt {
+  width: 315px;
+  height: 28px;
+  float: left;
+  line-height: 18px;
+  padding-left: 12px; }
+
+.content .content-2 .cot-form .form .dl33 dt .div23 {
+  width: 315px;
+  height: 18px;
+  margin-top: 4px; }
+
+.content .content-2 .cot-form .form .dl33 dt .div23 .icon-jianhao {
+  float: left;
+  height: 14px;
+  width: 20px;
+  font-size: 15px;
+  display: none; }
+
+.content .content-2 .cot-form .form .dl33 dt .div23 p {
+  font-size: 12px; }
+
+.content .content-2 .cot-form .form .dl34 {
+  width: auto;
+  margin: 0;
+  display: block;
+  height: 66px;
+  width: 338px; }
+
+.content .content-2 .cot-form .form .dl34 dd {
+  width: 318px;
+  height: 38px;
+  float: left;
+  font-size: 14px;
+  color: #000;
+  display: block;
+  padding-left: 15px; }
+
+.content .content-2 .cot-form .form .dl34 dd .div1 {
+  border: 1px solid #e3e2e2;
+  height: 36px;
+  width: 315px;
+  float: left;
+  position: relative; }
+
+.content .content-2 .cot-form .form .dl34 dd .div1 label {
+  font-size: 12px;
+  height: 38px;
+  line-height: 38px;
+  margin-left: 10px;
+  text-align: left;
+  width: 58px;
+  float: left;
+  color: #000; }
+
+.content .content-2 .cot-form .form .dl34 dd .div1 .input34 {
+  border: 0;
+  float: left;
+  height: 36px;
+  line-height: 36px;
+  padding: 0;
+  width: 238px;
+  background: 0; }
+
+.content .content-2 .cot-form .form .dl34 dt {
+  width: 315px;
+  height: 28px;
+  float: left;
+  line-height: 18px;
+  padding-left: 15px; }
+
+.content .content-2 .cot-form .form .dl34 dt .div2 {
+  width: 315px;
+  height: 18px;
+  margin-top: 4px; }
+
+.content .content-2 .cot-form .form .dl34 dt .div2 .icon-jianhao {
+  float: left;
+  margin-left: 10px;
+  height: 14px;
+  width: 20px;
+  font-size: 15px;
+  display: none; }
+
+.content .content-2 .cot-form .form .dl34 dt .div2 p {
+  font-size: 12px; }
+
+.content .content-2 .cot-form .form .dl44 {
+  width: auto;
+  margin: 0;
+  display: block;
+  height: 66px;
+  width: 338px; }
+
+.content .content-2 .cot-form .form .dl44 dd {
+  width: 318px;
+  height: 38px;
+  float: left;
+  font-size: 14px;
+  color: #000;
+  display: block;
+  padding-left: 15px; }
+
+.content .content-2 .cot-form .form .dl44 dd .div1 {
+  border: 1px solid #e3e2e2;
+  height: 36px;
+  width: 315px;
+  float: left;
+  position: relative; }
+
+.content .content-2 .cot-form .form .dl44 dd .div1 label {
+  font-size: 12px;
+  height: 38px;
+  line-height: 38px;
+  margin-left: 10px;
+  text-align: left;
+  width: 58px;
+  float: left;
+  color: #000; }
+
+.content .content-2 .cot-form .form .dl44 dd .div1 .input44 {
+  border: 0;
+  float: left;
+  height: 36px;
+  line-height: 36px;
+  padding: 0;
+  width: 238px;
+  background: 0; }
+
+.content .content-2 .cot-form .form .dl44 dt {
+  width: 315px;
+  height: 28px;
+  float: left;
+  line-height: 18px;
+  padding-left: 15px; }
+
+.content .content-2 .cot-form .form .dl44 dt .div2 {
+  width: 315px;
+  height: 18px;
+  margin-top: 4px; }
+
+.content .content-2 .cot-form .form .dl44 dt .div2 .icon-jianhao {
+  float: left;
+  margin-left: 10px;
+  height: 14px;
+  width: 20px;
+  font-size: 15px;
+  display: none; }
+
+.content .content-2 .cot-form .form .dl44 dt .div2 p {
+  font-size: 12px; }
+
+.content .content-2 .cot-form .form .p1 {
+  text-align: center; }
+
+.content .content-2 .cot-form .form .p1 span {
+  height: 14px;
+  display: inline-block; }
+
+.content .content-2 .cot-form .form .p1 span input {
+  margin: 3px 3px 3px 4px;
+  font-size: 12px; }
+
+.content .content-2 .cot-form .form .p1 label {
+  font-size: 12px;
+  color: #666;
+  height: 14px; }
+
+.content .content-2 .cot-form .form .p1 label a {
+  color: #666;
   font-size: 12px; }
 
 .content .content-2 .cot-form .form .p2 .input3 {
@@ -354,45 +540,21 @@ em, i {
 .content .content-2 .cot-form .form .p3 {
   font-size: 12px; }
 
-.content .content-2 .cot-form .form .p4 {
-  margin-top: 5px;
-  text-align: center; }
-
-.content .content-2 .cot-form .form .p4 a {
-  line-height: 54px;
-  padding: 9px 16px;
-  margin: 0 4px;
-  background: url(../images/icon_sig_reg.png) no-repeat; }
-
-.content .content-2 .cot-form .form .p4 .a11 {
-  width: 36px;
-  height: 32px;
-  background-position: -36px -18px; }
-
-.content .content-2 .cot-form .form .p4 .a2 {
-  background-position: -73px -18px; }
-
-.content .content-2 .cot-form .form .p4 .a3 {
-  background-position: -110px -18px; }
-
-.content .content-2 .cot-form .form .p4 .a4 {
-  background-position: -37px -54px; }
-
-.content .content-2 .cot-form .form .p4 .a5 {
-  background-position: -73px -54px; }
-
-.bank {
-  height: 20px; }
+.content .content-2 .cot-form .form .blank5 {
+  height: 5px; }
 
 .foot p {
   line-height: 20px;
   text-align: center;
   FONT-FAMILY: Arial,Verdana;
-  font-size: 10px; }
+  font-size: 10px;
+  color: #666; }
 
 .foot p a {
   font-size: 10px;
-  padding-right: 20px; }
+  padding-right: 20px;
+  color: #666; }
 
 .foot p .a22 {
-  padding-left: 25px; }
+  padding-left: 25px;
+  color: #666; }

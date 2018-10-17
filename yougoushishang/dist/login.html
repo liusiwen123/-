@@ -5,6 +5,7 @@
 		<title>优购时尚——登录页面</title>
 		<link rel="stylesheet" href="css/login.min.css">
 		<link rel="stylesheet" href="iconfont/iconfont.css">
+		<script src = "js/require.js" async = "true" defer data-main = "js/main-login"></script>
 	</head>
 	<body>
 		<!-- 头部 -->
@@ -43,7 +44,7 @@
 					<div class = "form">
 						<form action="" id = "loginform" method = "post">
 							<dl class = "dl1">
-								<!--一、用户名  -->
+								<!--一、手机号/用户名  -->
 								<dd>
 									<div class = "div1" style = "border:1px solid rgb(51,51,51);">
 										<i class = "iconfont icon-ren111"></i>
@@ -55,7 +56,7 @@
 								<dt>
 									<div class = "div2">
 										<i class = "iconfont icon-jianhao"></i>
-										<p>请输入账号</p>
+										<p class = "p11"></p>
 									</div>
 								</dt>
 							</dl>
@@ -72,7 +73,7 @@
 								<dt>
 									<div class = "div2">
 										<i class = "iconfont icon-jianhao"></i>
-										<p>请输入密码</p>
+										<p class = "p44"></p>
 									</div>
 								</dt>
 							</dl>
@@ -82,18 +83,21 @@
 										<dd>
 											<!-- 左边 -->
 											<div class = "div-left" style = "width:200px; border:1px solid rgb(51,51,51);">
+
 												<label class = "label1"  for="code2_"></label>
+												<input type="text" id = "input22"  style = "width:130px">	
+												
 											</div>
 											<!-- 右边 -->
-											<div class = "div-right" style = "padding:0">
-												<img src="images/yanzhengma.png" alt="">
+											<div class = "div-right" style = "padding:0"> 
+												<!--  <img src="images/yanzhengma.png" alt=""> -->
 											</div>
 										</dd>
 										<!-- 隐藏输入验证码 -->
 										<dt>
 											<div class = "div3">
 												<i class = "iconfont icon-jianhao"></i>
-												<p>请输入验证码</p>
+												<p class = "p222"></p>
 											</div>
 										</dt>
 									</dl>
@@ -102,9 +106,12 @@
 								<p class = "p1" style = "display:block; text-align:right; margin-right:17px;">
 									<a href="" style = "line-height:26px; text-decoration:underline">忘记密码?</a>
 								</p>
-								<p class = "p2" style = "text-align:center">
+								<!-- 五、点击登录 -->
+								<p class = "p2" style = "text-align:center" id = "p45">
 									<input type="submit" class = "input3" value = "点击登录" title = "登录">
+
 								</p>
+								<p class='ent_dc'></p>
 								<p class = "p3" style = "color:#999;margin-top:10px;text-align:center;">
 									使用合作网站账号登录优购
 								</p>
