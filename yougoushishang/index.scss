@@ -421,13 +421,14 @@
 	.NEW{
 		width:1326px;
 		height:712px;
+		position:relative;
 		// background:blue;
 	}
 	// 新品推荐——标题部分
 	.NEW .NEW-1{
 		width:1326px;
 		height:200px;
-		background:yellow;
+		// background:yellow;
 		// padding-left:576px;
 		// padding-top:80px;
 	}
@@ -461,8 +462,9 @@
 	.NEW .NEW-2{
 		width:1326px;
 		height:512px;
-		// background:pink;
 		background:#ffffff;
+		// position:relative;
+		// position:absolute;
 	}
 	//左侧箭头
 	.NEW .NEW-2 p{
@@ -471,6 +473,7 @@
 		height:22px;
 		margin-left:68px;
 		padding-top:210px;
+		// position:absolute;
 	}
 	// ——图片展示部分
 	.NEW .NEW-2 .div1{
@@ -485,7 +488,7 @@
 		float:left;
 		 width:230px;
 		height:437px;
-		// background:green;
+		 // background:green;
 		 margin-left:90px;
 		// padding-top:125px;
 	}
@@ -648,6 +651,7 @@
 		height:22px;
 		// margin-left:1100px;
 		padding-top:210px;
+		// position:absolute;
 	}
 // 内容2 今日主推大牌
 	.zhutui{
@@ -701,29 +705,54 @@
 		
 		
 	}
+	
 	.zhutui .zhutui-2 .zhutui-top ul{
 		// float:left;
+		width:990px;
 
 	}
 	.zhutui .zhutui-2 .zhutui-top ul li{
 		float:left;
+		 position:relative;
 		// width:;
 		// height:
 		// z-index:1;
+	}
+	.zhutui .zhutui-2 .zhutui-top ul li  #img222{
+		width:310px;
+	 	height:403px;
+	 	margin-right:20px;
+	 	 margin-top:104px;
+	 	
+	 	
+	}
+
+	.zhutui .zhutui-2 .zhutui-top ul li .hover{
+		// width:310px;
+		// height:403px;
+		 position: absolute;
+		text-align:center;
+		top:104px;
+		left: 0;
+		background: #000;
+		opacity:0.5;
+		// display: none;
+		width: 330px;
+		height: 403px;
+
+	}
+	 .zhutui .zhutui-2 .zhutui-top ul li .hover #img333{
+		width:64px;
+		height:26px;
+		margin:180px auto;
+				
 	}
 	// .zhutui .zhutui-2 .zhutui-top ul li:nth-child(1){
 	// 	width:310px;
 	// 	height:403px;
 	// 	background:yellow;
 	// }
-	.zhutui .zhutui-2 .zhutui-top ul li img{
-		width:310px;
-	 	height:403px;
-	 	margin-right:20px;
-	 	 margin-top:104px;
-	 	// display:none;
-	 	
-	}
+	
 	// 图片隐藏部分
 	/*.zhutui .zhutui-2  ol{
 		// float:left;
@@ -743,6 +772,11 @@
 	 	 // padding-right:210px;
 	 	
 	}*/
+	#a1{
+		display:block;
+		height: 100%;
+		width: 100%;
+	}
 	// 品牌名滚动部分bottom
 	.zhutui .zhutui-2 .zhutui-bottom{
 		width:991px;

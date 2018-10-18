@@ -1,0 +1,62 @@
+@import "base";
+// 头部
+	.head{
+		// min-width:1200px;
+		height:40px;
+		// width:1326px;
+		background:#333333;
+	}
+	.head ul li{
+		float:left;
+		text-align:center;
+		line-height:40px;
+		padding-right:35px;
+	}
+	.head ul .li1{
+		padding-left:140px;
+	}
+	.head ul .li3{
+	
+		padding-left:600px;
+		padding-right:5px;
+	}
+	.head ul li:nth-child(4){
+		padding-left:5px;
+	}
+
+	.head ul .li5{
+		// width:46px;
+		// height:40px;
+		padding-left:20px; 
+		background:url(../images/bj1.jpg) no-repeat left;
+	}
+	
+	.head ul .li6 {
+		padding-left:20px; 
+		background:url(../images/bj2.jpg) no-repeat left;
+  		// width:14px;
+  		// height:12px;
+	}
+
+	.head ul li a{
+		color:#ffffff;
+		font-size:12px;
+	}
+// logo部分
+	.cart_header{
+		overflow: hidden;
+   		 margin-top: 15px;
+   		 width: 990px;
+    	margin-left: auto;
+   		 margin-right: auto;
+   		 background:pink;
+	}
+	.cart_header .log{
+		width: 355px;
+   		height: 50px;
+   		float:left;
+   		background:url(images/logo333.jpg) no-repeat left top;
+	}
+	.cart_header .log img{
+	    vertical-align: middle;	
+	}

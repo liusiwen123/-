@@ -113,7 +113,7 @@ define(["jquery"], function($) {
 					// alert(res);
 					// 将数据通过循环遍历，添加到页面上
 					// console.log(res.length);
-					var html = "";
+					/*var html = "";
 						html += `<div class = "div1-1">
 									<a href="list.html"><img src="images/xinpin1.jpg" alt="" id = "img1"></a>
 									<dl>
@@ -147,7 +147,7 @@ define(["jquery"], function($) {
 									</dl>
 								</div>`;
 					
-					$(".content .NEW .NEW-2 .div1").html(html);
+					$(".content .NEW .NEW-2 .div1").html(html);*/
 				},
 				error:function(msg){
 					alert(msg);
@@ -156,7 +156,7 @@ define(["jquery"], function($) {
 			})
 
 			// 特效部分
-			// 移入时 透明度变成灰色
+			// 1.移入时 透明度变成灰色
 			var oDiv = $(".NEW-2").find(".div1");
 			// var oDiv = $(".cot2-1").find("div");
 			oDiv.on("mouseenter","div",function(){
@@ -171,7 +171,27 @@ define(["jquery"], function($) {
 			 		background:'white'
 				})
 			});
-	
+		// 2.点击左右箭头，切换图片
+				/*var oLeft = document.getElementById('jiantou1')
+				var oRight = document.getElementById('jiantou2')
+			// 点击左箭头让#NEW-2移动920px，每点击一次获取一次当前的left值
+				oLeft.onclick = function(){
+					var now_left = parseInt($('#NEW-2').css('left'));
+					$('#NEW-2').stop().animate({
+						left:now_left-920 + 'px'
+					},1000,)
+				}
+			// 点击右箭头移动
+				oRight.onclick = function(){
+					var now_left = parseInt($('#NEW-2').css('left'));
+					if (now_left < 0) {
+						$('#NEW-2').stop().animate({
+						 left: now_left + 920 +'px'
+					},1000,)
+					}
+					
+				}*/
+
 
 
 	// 4.今日主推大牌

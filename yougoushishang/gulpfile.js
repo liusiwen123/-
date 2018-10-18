@@ -22,7 +22,7 @@ gulp.task("images",function(){
 const scss = require("gulp-sass-china");
 const minifyCSS = require("gulp-minify-css");
 const rename = require("gulp-rename");
-gulp.task("scss",function(){
+gulp.task("index_sass",function(){
 	return gulp.src("index.scss")
 	.pipe(scss())
 	.pipe(gulp.dest("dist/css"))
@@ -78,6 +78,16 @@ gulp.task("scss",function(){
 	.pipe(connect.reload());
 })
 
+// 购物车页面css shopping.css
+	gulp.task("shopping_scss",function(){
+	return gulp.src("shopping.scss")
+	.pipe(scss())
+	.pipe(gulp.dest("dist/css"))
+	.pipe(minifyCSS())
+	.pipe(rename("shopping.min.css"))
+	.pipe(gulp.dest("dist/css"))
+	.pipe(connect.reload());
+})
 
 
 
@@ -109,7 +119,7 @@ gulp.task("copy-php",function(){
 })
 
 // 一次性执行多个任务
-gulp.task("build",["data","images","scss","scripts","copy-html"],function(){
+gulp.task("build",["index_sass","data","images","scss","scripts","copy-html"],function(){
 	console.log("项目建立成功");
 })
 
@@ -117,11 +127,12 @@ gulp.task("build",["data","images","scss","scripts","copy-html"],function(){
 gulp.task("watch",function(){
 	gulp.watch(["*.json", "!package.json"],["data"]);
 	gulp.watch(["*.{jpg,png}"],["images"]);
-	gulp.watch(["index.scss"],["scss"]);
+	gulp.watch(["index.scss"],["index_sass"]);
 	gulp.watch(["list.scss"],["scss"]);
 	gulp.watch(["login.scss"],["scss"]);
 	gulp.watch(["register.scss"],["scss"]);
 	gulp.watch(["details.scss"],["scss"]);
+	gulp.watch(["shopping.scss"],["shopping_scss"]);
 	gulp.watch(["*.js", "!gulpfile.js"], ['scripts']);
 	gulp.watch(["*.html"],["copy-html"]);
 	gulp.watch(["*.php"],["copy-php"]);

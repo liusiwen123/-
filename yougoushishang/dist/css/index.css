@@ -385,12 +385,12 @@ em, i {
 
 .NEW {
   width: 1326px;
-  height: 712px; }
+  height: 712px;
+  position: relative; }
 
 .NEW .NEW-1 {
   width: 1326px;
-  height: 200px;
-  background: yellow; }
+  height: 200px; }
 
 .NEW .NEW-1 h2 {
   font-size: 42px;
@@ -613,14 +613,33 @@ em, i {
   width: 991px;
   height: 506px; }
 
-.zhutui .zhutui-2 .zhutui-top ul li {
-  float: left; }
+.zhutui .zhutui-2 .zhutui-top ul {
+  width: 990px; }
 
-.zhutui .zhutui-2 .zhutui-top ul li img {
+.zhutui .zhutui-2 .zhutui-top ul li {
+  float: left;
+  position: relative; }
+
+.zhutui .zhutui-2 .zhutui-top ul li #img222 {
   width: 310px;
   height: 403px;
   margin-right: 20px;
   margin-top: 104px; }
+
+.zhutui .zhutui-2 .zhutui-top ul li .hover {
+  position: absolute;
+  text-align: center;
+  top: 104px;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  width: 330px;
+  height: 403px; }
+
+.zhutui .zhutui-2 .zhutui-top ul li .hover #img333 {
+  width: 64px;
+  height: 26px;
+  margin: 180px auto; }
 
 /*.zhutui .zhutui-2  ol{
 		// float:left;
@@ -640,6 +659,11 @@ em, i {
 	 	 // padding-right:210px;
 	 	
 	}*/
+#a1 {
+  display: block;
+  height: 100%;
+  width: 100%; }
+
 .zhutui .zhutui-2 .zhutui-bottom {
   width: 991px;
   height: 108px;

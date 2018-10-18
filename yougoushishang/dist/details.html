@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>优购时尚--商品详情页</title>
 	<link rel="stylesheet" href="css/details.min.css">
+	<link rel="stylesheet" href="iconfont/iconfont.css">
 	<script src = "js/require.js" async = "true" defer data-main = "js/main-details"></script> 
 	<script>
 		// 商品内容json部分
@@ -190,12 +191,20 @@
 				<div id = 'menu'>
 					<!-- title-top -->
     				<div class = 'm-t'>
-    					<a href="index.html">您的位置：</a>
-    					<a href="list.html">首页</a>	
+    					<span> 您当前位置:</span>
+    					<a href="index.html">首页</a>
+    					<span> > </span>
+    					<a href="list.html">女鞋</a>
+        				<span> > </span>
+    					<a href="">女士单鞋</a>
+    					<span> > </span>
+    					<a href="">满帮鞋</a>
+
     				</div>
     			</div>
 				<!-- 内容部分 -->
     			<div id = 'main'>
+    				<!--左侧七张小图 -->
     				<div class = 'm-l'>
         				<img src = "images/x1.jpg">
         				<img src = "images/x2.jpg">
@@ -205,53 +214,88 @@
         				<img src = "images/x6.jpg">
         				<img src = "images/x7.jpg">
         			</div>
+        			<!--中间大图内容  -->
         			<div class = 'm-c'>
             			<div id="div">
 	        				<div class="small_pic">
-								<span class=" mark "></span>   <!--遮罩层-->
-								<span class="float_layer"></span>
-								<img src="images/x8.jpg" />
+								<span class=" mark "></span> <!--遮罩层-->
+								<!--左侧小的遮罩层 -->
+								 <span class="float_layer"></span>
+								 <!-- 中间的图片 -->
+								<img src="images/x11.jpg" id = "img1"/>
 							</div>
+								<!--右侧大的遮罩层  -->
 							<div class="big_pic">
-								<img src="images/bigd8.png" />
+								<!-- 右侧大遮罩层中的图片 -->
+								<img src="images/x111.jpg"/>
 							</div>
 						</div>
     			 	</div>
+    			 	<!--最右侧商品详细介绍内容  -->
     			 	<div class = 'm-r'>
-        				<img src = "images/d9.png">
-        				<p>The north face乐斯菲斯2018春夏新品男子硬壳单冲冲锋衣NF0A2XTC6821</p>
-        				<span class = 'span1'>￥398</span>
-        				<i class = 'i1'>￥698</i><br/>
-        				<b>颜色：</b>
-        				<img src = "images/d10.png">
-        				<img src = "images/d11.png"><br/>
-        				<b>尺码：</b>
-	        			<span class = 'span2'>M</span>
-	        			<span class = 'span2'>L</span>
-	        			<span class = 'span2'>XL</span>
-	        			<span class = 'span2'>XXL</span><br/>
-        				<b>数量：</b>
-            			<i class = 'i2'>-</i><span class = 'span3'>1</span><i  class = 'i3'>+</i><br/>
-        			
-        				<button class = 'plus'>加入购物车</button>
-        				<a href="submit.html">立即购买</a>
+        				<img src = "images/tu12.png">
+        				<p>Belle/百丽2018秋季专柜新款牛皮革女旅游鞋老爹鞋T2C1DCM8</p>
+        				<span class = 'span1'>￥698</span>
+        				<i class = 'i1'>￥999</i><br/>
+        				<div class = "div1">
+        					<dl class = "dl1">
+        						<dt style = "min-width:46px;">限时抢</dt>
+        						<dd class = "dd1">
+        							<span class = "tip" id = "validTime">
+        								还剩<b>22</b>小时<b>51</b>分钟<b>18</b>秒
+        							</span>
+        						</dd>
+        					</dl>
+        				</div>
+        				<b class = "b2">颜色：</b><img class = "x10" src = "images/x10.jpg">
+        				<b class = "b3">尺码：</b>
+	        			<span class = 'span2'>34</span>
+	        			<span class = 'span2'>35</span>
+	        			<span class = 'span2'>36</span>
+	        			<span class = 'span2'>37</span>
+	        			<span class = 'span2'>38</span><br/>
+	        			<span class = 'span2'>39</span><br/>
+        				<b class = "b4">数量：</b>
+        				<div class = "div2">
+            				<i class = 'i2'>-</i><span class = 'span3'>1</span><i  class = 'i3'>+</i><br/>
+        				</div>
+        				<b class = "b5">
+        					<a class = 'plus'>加入购物袋</a>
+        					<a class = 'buy' href="submit.html">立即购买</a>
+        				</b>
+        				<ul class = "ul6">
+        					<li class = "li1">
+        						<i class ="iconfont icon-shoucang"></i>
+        						<a href="">收藏</a>
+        						
+        					</li>
+        					<li class = "li2">
+        						<i class = "iconfont icon-fenxiang"></i>
+        						<a href="">分享</a>
+        					</li>
+        				</ul>
+        				<p class = "p6">
+        					<img src="images/app.jpg" alt="">
+        					<b class = "b6">扫一扫加入购物袋</b>
+        				</p>
        				</div>
-				</div>
+				</div> 
 				<!-- 商品详情部分 -->
 				<div id = 'content'>
         			<h3>商品详情</h3>
-        			<img src = "images/d12.png">
-        			<img src = "images/d13.png">
-        			<img src = "images/d14.png">
-        			<img src = "images/d15.png">
-        			<img src = "images/d16.png">
-        			<img src = "images/d17.png">
-        			<img src = "images/d18.png">
-        			<img src = "images/d19.png">
-        			<img src = "images/d20.png">
-        			<img src = "images/d21.png" class = 'img'>
-        			<p>The North Face（乐斯菲斯），亦被翻译为北面。于1968年<TheN>		</TheN>orthFace开始设计、生产并出售自己品牌的户外装备。发展到80年代末，TNF成为全美国生产范围涵盖外套、滑雪服、背包、帐篷等一系列户外用品的生产商。TheNorthFace（TNF）这一名称的来由，在北半球，山峰的北坡是最冷、冰雪覆盖最深、最难以攀爬的一侧，暗指真正的登山爱好者永远无所畏惧、迎难而上。</p>
-        		</div>
+        			<img src = "images/g.jpg">
+        			<img src = "images/g1.jpg">
+        			<img src = "images/g3.jpg">
+        			<img src = "images/g4.jpg">
+        			<img src = "images/g5.jpg">
+        			<img src = "images/g6.jpg">
+        			<img src = "images/g7.jpg">
+        			<img src = "images/g8.jpg">
+        			<img src = "images/g9.jpg">
+        			<img src = "images/g10.jpg">
+        			<img src = "images/g11.jpg" class = 'img'>
+        			<p>BeLLE（百丽），百变所以美丽。主张多变多元的新生代态度，不断融合潮流趋势，拥抱不同的生活体验与生活经历。将女性的百变魅力注入到鞋履设计中，让女人在不同的人生阶段，不同的场合，不同的潮流趋势下，尽显自己自信的一面。致力于为现代都市女性提供充满自由的行走体验。</p>
+        		</div> 
 		<!-- 底部 -->
 		<div class = "foot">
 			<div class="foot-1">
@@ -357,6 +401,6 @@
 				</div>
 
 			</div>
-		</div> 
+		</div>  
 	</body>
 </html>
