@@ -6,8 +6,13 @@ console.log("项目建立成功");
 require.config({
 	paths:{
 		"jquery":"jquery-1.11.3",
-		"details":"details"
-		
+		"jquery-cookie": "jquery.cookie",
+		"details":"details",	
+	},
+	//设置，模块之间的依赖关系
+	shim: {
+		//保证，先加载JQuery，再加载
+		"jquery-cookie": ["jquery"],
 	}
 })
 

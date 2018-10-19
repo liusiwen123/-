@@ -28,6 +28,32 @@ define(["jquery"],function($){
 			});
 
 
+
+
+			/****库存数量加减******/
+					// 数量增加
+					$('.i3').click(function(){
+						// alert(1);
+						var goodval = Number($('.span3').html());
+						$('.span3').html(goodval + 1)
+						//console.log(goodval)
+						
+					})
+					// 数量减少
+					$('.i2').click(function(){
+						var goodval = Number($('.span3').html());
+						
+						if(goodval <= 1){
+							goodval = 1;
+						}else{
+							$('.span3').html(goodval - 1);
+						}
+					})
+					
+
+
+
+
 			// 2.实现图片的放大缩小
 			/*
 			 *  一。当鼠标移入遮罩时，滑块和大图所在的盒子显示
@@ -121,7 +147,81 @@ define(["jquery"],function($){
 				// 	$('.div2 .i3').css('background-position', '0 -1356px');
 				// })
 
+			// 点击加入购物袋,将商品信息存储到cookie当中
+			// 创建cookie
+			$('.plus').click(function(){
+				// alert(1);
+				$('#good_Car').css('display','block');
+				//获取到当前加入购物车按钮所在的商品id
+				var id = this.id;
 
+				//1、判断是否第一次添加cookie
+				var first = $.cookie("goods") == null ? true : false;
+				if(first){
+					$.cookie('goods', `[{id:${id},num:1}]`, {expires: 7});
+				}else{
+				//2、判断之前是否添加过该商品
+				var str = $.cookie('goods');
+				var arr = eval(str);
+				var same = false; //假设没有相同的数据
+				for(var i = 0; i < arr.length; i++){
+					if(arr[i].id == id){
+						//之前添加过
+						arr[i].num++;
+						var cookieStr = JSON.stringify(arr);
+						$.cookie('goods', cookieStr, {expires: 7});
+						same = true;
+						break;
+					}
+				}
+
+				if(!same){
+					//之前没添加过
+					var obj = {id: id, num: 1};
+					arr.push(obj);
+					var cookieStr = JSON.stringify(arr);
+					$.cookie('goods', cookieStr, {expires: 7});
+				}
+				}
+				 // sc_car();
+
+			})
+
+
+			// 购物车数字
+			/*function sc_car(){
+				var str = $.cookie("goods");
+				if(str){
+					var arr = eval(str);
+					var sum = 0;
+					for(var i = 0; i < arr.length; i++){
+					sum += arr[i].num;
+					}
+				$(".sc_num").html(sum);
+				$(".sc_num").css('display', 'block');
+				}else{
+				$(".sc_num").css('display', 'none');
+				}
+				}
+			}*/
+
+
+
+			// 关闭悬浮层
+			$('.good_toplose').click(function(){
+				$('#good_Car').css('display','none');
+			})
+					
+			// $('#h_jg').click(function(){
+			// 	$('#good_Car').css('display','none')
+			// });
+					
+					
+					
+			
+					
+					
+					
 
 
 

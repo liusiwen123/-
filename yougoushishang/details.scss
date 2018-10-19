@@ -938,4 +938,94 @@
 		color:#ffffff;
 		padding-left:118px;
 	}
+	// 悬浮层
+	#good_Car {
+ display: none;
+  width: 430px;
+  border: 8px solid #DDD;
+  z-index: 10000;
+  left: 50%;
+  top: 50%;
+  margin-left: -215px;
+  margin-top: -150px;
+  position: fixed;
+  background: #fff; }
 
+/**上半部分****/
+#good_Car .good_Car_top {
+  margin-left: 25px;
+  width: 390px;
+  padding-bottom: 10px;
+  float: left;
+  font-size: 12px; }
+
+#good_Car .good_Car_top ul {
+  width: 100%;
+  float: left; }
+
+/***上******/
+#good_Car .good_Car_top ul li {
+  margin-top: 10px;
+  width: 100%;
+  line-height: 20px;
+  float: left; }
+
+#good_Car .good_Car_top ul li .good_topname {
+  color: #393939;
+  font-size: 16px;
+  float: left; }
+
+#good_Car .good_Car_top ul li .good_toplose {
+  color: #393939;
+  font-size:14px;
+  float: right;
+  cursor: pointer; }
+
+/****上中*****/
+#good_Car .good_Car_top ul li a {
+  float: left;
+  margin-right: 10px; }
+ #good_Car .good_Car_top ul li a img{
+ 	width:100px;
+ } 
+
+/****下半部分*****/
+#good_Car .good_Car_buttom {
+  width: 420px;
+  border-top: 1px dotted #DDD;
+  margin: 10px 0px 0px 5px;
+  float: left; }
+
+#good_Car .good_Car_buttom .good_Car_but {
+  font-size: 12px;
+  margin: 10px 0px 0px 10px;
+  color: #7B7B7B; }
+
+#good_Car .good_Car_buttom .good_Car_NR {
+  margin: 10px 0px 0px 5px; }
+
+#good_Car .good_Car_buttom .good_Car_NR .good_Car_pic {
+  width: 85px;
+  margin-left: 15px;
+  text-align: center;
+  float: left; }
+
+#good_Car .good_Car_buttom .good_Car_NR .good_Car_pic a img {
+  height: 80px;
+  padding: 1px;
+  border: 1px solid #DDD; }
+
+#good_Car .good_Car_buttom .good_Car_NR .good_Car_pic .car_name {
+  color: #7B7B7B;
+  text-align: left;
+  line-height: 18px;
+  height: 36px;
+  overflow: hidden;
+  margin-top: 5px;
+  font-size: 12px; }
+
+#good_Car .good_Car_buttom .good_Car_NR .good_Car_pic .car_money {
+  color: #C80A28;
+  font-size: 14px;
+  height: 25px;
+  text-align: left; }
