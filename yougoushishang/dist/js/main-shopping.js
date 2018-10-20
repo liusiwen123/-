@@ -18,6 +18,6 @@ require.config({
 
 
 //引入自己创建的模块
-require(["shopping"],function(shopping){
+require(["shopping",'jquery'],function(shopping,$){
 	shopping.shopping();
 })

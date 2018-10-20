@@ -35,10 +35,11 @@ define(["jquery"], function($) {
 				success:function(res){
 					// alert(res);
 					// 将数据通过循环遍历，添加到页面上
+					
 					var html = "";
 					
 						html += `<li>
-		    						<a href="description.html">
+		    						<a href="details.html">
 		    					   	 	<img src = "images/shuangjianbao1.jpg" alt=""/>
 		    					    	<h3>限时抢￥169</h3>
 		    					   	 	<p>Teenmix/天美意夏黑色织物时尚休</br>闲简约学院风女双肩包17C10BX7</p>
@@ -48,7 +49,7 @@ define(["jquery"], function($) {
 	    				   		</li>
 
 	    				   		<li>
-		    						<a href="description.html">
+		    						<a href="details.html">
 		    					    	<img src = "images/shuangjianbao2.jpg" alt=""/>
 		    					    	<h3>限时抢￥299</h3>
 		    					    	<p>BASTO/百思图冬季专柜同款布面/</br>牛皮时尚休闲男双肩包8256-DX7</p>
@@ -59,7 +60,7 @@ define(["jquery"], function($) {
 
 
 	    				    	<li>
-		    						<a href="description.html">
+		    						<a href="details.html">
 		    					    	<img src = "images/shuangjianbao3.jpg" alt=""/>
 		    					    	<h3>限时抢￥299</h3>
 		    					    	<p>BASTO/百思图冬季专柜同款布面/</br>牛皮时尚休闲男双肩包8221DDX7</p>
@@ -70,7 +71,7 @@ define(["jquery"], function($) {
 
 
 	    				   		<li>
-		    						<a href="description.html">
+		    						<a href="details.html">
 		    					   	 	<img src = "images/shuangjianbao4.jpg" alt=""/>
 		    					    	<h3>限时抢￥298</h3>
 		    					    	<p>Teenmix/天美意夏绿色织物时尚迷</br>彩学院风中性双肩包62193BX7</p>

@@ -22,6 +22,9 @@ b, strong, h1, h2, h3, h4, h5, h6 {
 em, i {
   font-style: normal; }
 
+body {
+  width: 100%; }
+
 .top {
   height: 51px; }
 
@@ -875,3 +878,70 @@ em, i {
   font-size: 14px;
   height: 25px;
   text-align: left; }
+
+.sc_right {
+  position: absolute;
+  width: 270px;
+  border-left: 2px solid #b6b6b6;
+  right: -270px;
+  top: 0;
+  height: 100%; }
+
+.sc_pic {
+  width: 40px;
+  height: 40px;
+  padding: 4px 6px;
+  background: url(../images/toolbars.png) #999 15px 15px no-repeat;
+  position: relative;
+  left: -52px;
+  top: 50%;
+  margin-top: -24px; }
+
+.sc_num {
+  position: absolute;
+  padding: 2px 8px;
+  border-radius: 50%;
+  background: red;
+  color: #fff;
+  top: -8px;
+  left: 20px;
+  z-index: 1; }
+
+.sc_goodsPic {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #b6b6b6;
+  float: left; }
+
+.sc_goodsPic img {
+  width: 100%;
+  height: 100%; }
+
+.sc_goodsTitle {
+  line-height: 40px;
+  color: block;
+  margin-left: 20px;
+  float: left; }
+
+.sc_goodsBtn {
+  background: #fc1934;
+  color: #fff;
+  text-align: center;
+  float: left;
+  line-height: 30px;
+  width: 60px;
+  height: 30px;
+  margin-left: 20px;
+  cursor: pointer; }
+
+.sc_goodsNum {
+  float: left;
+  line-height: 30px;
+  font-size: 10px;
+  margin-left: 5px; }
+
+.sc_right li {
+  height: 100px; }
+
+.sc_right ul {
+  margin-top: 80px; }
